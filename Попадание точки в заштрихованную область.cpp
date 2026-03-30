@@ -1,0 +1,23 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    double x, y;
+    cout << "x = "; cin >> x;
+    cout << "y = "; cin >> y;
+    double r = 25.0;
+    double d = sqrt(pow(x, 2) + pow(y, 2));
+    double L = -abs(x);
+    if (d > r || y > L) {
+        cout << "Нет" << endl;
+    }
+    else if (d == r || y == L) {
+        cout << "На границе" << endl;
+    }
+    else {
+        cout << "Да" << endl;
+    }
+    return 0;
+}
